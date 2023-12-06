@@ -2,10 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 10px; /* Збільшити відступи для кращого вигляду на малих екранах */
 }
 
 .container {
@@ -15,6 +12,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    margin: 0 auto; /* Центрувати контейнер на екрані */
 }
 
 h1 {
@@ -39,15 +37,16 @@ input {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Зробити відступи включаючи границі */
 }
 
 .card-info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Змінити орієнтацію для кращої розмітки */
 }
 
 .card-info-item {
-    flex: 1;
+    margin-bottom: 10px;
 }
 
 button {
@@ -72,6 +71,7 @@ button:hover {
     text-align: center;
 }
 
+/* Додано стилі для завантажувача */
 .loader-container {
     display: flex;
     justify-content: center;
